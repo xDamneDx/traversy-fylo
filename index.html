@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      if (
+        localStorage.getItem("fylo-theme") === "dark" ||
+        (!("fylo-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <script src="js/script.js" defer></script>
     <title>Fylo</title>
   </head>
 
