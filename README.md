@@ -2,4 +2,4 @@
 
 Project from Brad Traversy "Tailwind CSS From Scratch" course.
 
-Hosted version:
+Hosted version: https://dmn-fylo.netlify.app/
